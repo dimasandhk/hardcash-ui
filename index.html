@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<style>
+			input[type="file"] {
+				display: block;
+				margin: auto;
+				margin-top: 4px;
+				width: 90%;
+				overflow: hidden;
+			}
+			.pinjaman-card {
+				box-shadow: 0px 4px 8px 0px rgba(169, 169, 169, 0.2);
+			}
+		</style>
+	</head>
+	<body class="bg-slate-900">
+		<div class="justify-center items-center flex mt-12">
+			<div class="pinjaman-card rounded-xl w-[330px] h-full">
+				<div class="upper relative bg-red-600 text-white p-10 font-bold rounded-t-xl">
+					<h3>Nama: Alwan H. R.</h3>
+					<h3>Telepon: 0857********</h3>
+					<!-- <div class="absolute -top-4 left-[40%]">
+						<img
+							src="./prof.jpeg"
+							alt="profile"
+							class="w-12 h-12 rounded-full border-white border-2"
+						/>
+					</div> -->
+				</div>
+				<div class="lower bg-white px-10 py-7 rounded-b-xl text-center font-bold">
+					<h3>Pinjaman</h3>
+					<select class="mt-1 p-2 rounded-xl">
+						<option value="">Select Pinjaman</option>
+						<option>Rp 10.000.000</option>
+						<option>Rp 15.000.000</option>
+						<option>Rp 20.000.000</option>
+						<option>Rp 25.000.000</option>
+						<option>Rp 30.000.000</option>
+						<option>Rp 35.000.000</option>
+						<option>Rp 40.000.000</option>
+						<option>Rp 45.000.000</option>
+						<option>Rp 50.000.000</option>
+					</select>
+					<h3 class="mt-2">Cicilan</h3>
+					<select class="mt-1 p-2 rounded-xl">
+						<option value="">Select Cicilan</option>
+						<option>4 Bulan</option>
+						<option>6 Bulan</option>
+						<option>8 Bulan</option>
+						<option>10 Bulan</option>
+						<option>12 Bulan</option>
+						<option>18 Bulan</option>
+						<option>24 Bulan</option>
+					</select>
+					<h3 class="mt-2">Foto KTP</h3>
+					<input type="file" id="imageUpload" accept="image/*" />
+					<!-- <img id="imagePreview" src="" class="mt-3" height="200" alt="Image preview..." /> -->
+					<script>
+						// function previewFile() {
+						// 	const preview = document.querySelector("#imagePreview");
+						// 	const file = document.querySelector("#imageUpload").files[0];
+						// 	const reader = new FileReader();
+
+						// 	reader.addEventListener(
+						// 		"load",
+						// 		function () {
+						// 			// convert image file to base64 string
+						// 			preview.src = reader.result;
+						// 		},
+						// 		false
+						// 	);
+
+						// 	if (file) {
+						// 		reader.readAsDataURL(file);
+						// 	}
+						// }
+					</script>
+					<button class="bg-red-700 font-bold rounded-xl py-2 px-5 mt-5 text-white">
+						Ajukan Sekarang
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
